@@ -4,3 +4,10 @@
 *.txt
 
 /experiment/**/model/
+
+esr_experiment__with_models__mirror.zip
+fews.zip
+ufsac-public-2.1.tar.xz
+WSD_Evaluation_Framework.zip
+
+.DS_Store

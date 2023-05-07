@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Python related
-conda_path=$HOME/miniconda3
-virtual_env=py3.8.8_pt1.9.0_tr4
+conda_path=/etc/conda
+virtual_env=myenv
 cache=$HOME/.cache/huggingface/transformers
 
 #  Java related
-java_path=/usr/bin
+java_path=/opt/conda/envs/myenv/bin/
 
 # Dataset related
-data=$(dirname $BASH_SOURCE)/../../data
+data=/esr/data
