@@ -56,7 +56,7 @@ class WsdDataset(Dataset):
             word_token = []
             word_token_len = []
             index = 0
-            for word in sentence.getchildren():
+            for word in list(sentence):
                 tokens = self.tokenize(word.text)
                 word_token.append(tokens)
                 word_token_len.append(len(tokens))
@@ -185,7 +185,7 @@ class WsdDataset(Dataset):
             word_token.append(tokens)
             word_token_len.append(len(tokens))
             index += 1
-            for word in sentence.getchildren():
+            for word in list(sentence):
                 tokens = self.tokenize(word.get('surface_form').replace('_', ' '))
                 word_token.append(tokens)
                 word_token_len.append(len(tokens))
